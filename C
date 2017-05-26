@@ -1,7 +1,0 @@
-for (i=0; i<MAX_HEIGHT; i++) {
-  for (j=0; j<MAX_WIDTH; j++) {
-    field[i][j] = 0
-  }
-}
-
-=> memset(field, 0, sizeof(field));
