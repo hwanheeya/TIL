@@ -21,6 +21,7 @@
 - https://brunch.co.kr/@insuk/13
 - https://goo.gl/OGdxL1
 - http://www.thisisgame.com/webzine/gameevent/nboard/227/?n=71605
+- https://okky.kr/article/316845 (무관한 내용, 아직 안읽음)
 
 #### 읽기 전에 알아두면 좋은 것들
 - 스크럼, 스프린트, 백로그
