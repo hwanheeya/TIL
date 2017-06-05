@@ -11,3 +11,4 @@
 [참고 링크]
   http://m.blog.naver.com/samsjang/220748839547
   https://apple.stackexchange.com/questions/209572/how-to-use-pip-after-the-os-x-el-capitan-upgrade
+  http://thrillfighter.tistory.com/472
