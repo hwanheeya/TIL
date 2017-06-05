@@ -1,6 +1,8 @@
 
 1. jupyter notebook 이란 무엇인가
 2. matplotlib 이란 무엇인가
+    - plot : 그래프를 그리다는 뜻이 있음
+    - 
 3. 모듈 설치 시 pip install --user <modulename>를 사용해라 
 
 
