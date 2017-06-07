@@ -1,1 +1,4 @@
-guibg, ctermbg, hi, Normal
+- [x] guibg
+- [x] ctermbg
+- [x] hi
+- [x] Normal
