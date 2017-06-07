@@ -32,14 +32,14 @@
         ![fail](./fail_vimcolor.png)
           
 5. 망함
-      - 당황하지 않고 해결책을 찾아봅시다.    
+      * 당황하지 않고 해결책을 찾아봅시다.    
         터미널의 scheme관련 문제가 있는 것 같네요.   
         제가 쓰고 있는 터미널의 배경에 투명도가 적용되어 있기 때문이죠. (https://github.com/spf13/spf13-vim/issues/284)  
         `vim의 scheme과 terminal의 scheme`을 같이 제공해주는 오픈소스를 사용합시다.  
       
 6. 맙소사
-      - ~/.vimrc 내에서 colorscheme 부분 밑에 hi Normal guibg=none ctermbg=none 을 적용하니 봐줄만 하군요
-      - guibg, ctermbg, hi, Normal 이건 다 뭘까요
+      * ~/.vimrc 내에서 colorscheme 부분 밑에 hi Normal guibg=none ctermbg=none 을 적용하니 봐줄만 하군요
+      * guibg, ctermbg, hi, Normal 이건 다 뭘까요
           
           
 ---
