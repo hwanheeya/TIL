@@ -1,0 +1,1 @@
+guibg, ctermbg, hi, Normal
