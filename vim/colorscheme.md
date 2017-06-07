@@ -26,19 +26,16 @@
       - PluginInstall
       - 그러면 Vundle 프로그램은 ~/.vim/bundle에 설치되고 Vundle을 이용해서 받은 플러그인은  ~/.vim/bundle에 설치됩니다.       
       - 자 그렇다면, Vundle을 이용해서 colorscheme을 받으면 해당 scheme이 ~/.vim/bundle에 설치 됬습니다.
-      - ~/.vimrc 에서 colorscheme을 적용하려고 하면 "cannot find color scheme ' ~~~ ' " 라고 뜹니다.
-          
-          + 왜 그럴까요???
-          cp ~/.vim/bundle/vim-colors-solarized/colors/solarized.vim ~/.vim/colors/ 와 같은 작업을 해줍시다. (예시)
-          했는데 ... 화면이 아래와 같습니다.
-          
-          ![fail](./fail_vimcolor.png)
+      - ~/.vimrc 에서 colorscheme을 적용하려고 하면 "cannot find color scheme ' ~~~ ' " 라고 뜹니다.  
+      - 왜 그럴까요??? ~/.vim/colors에 해당 scheme이 없기 때문이죠
+        cp ~/.vim/bundle/vim-colors-solarized/colors/solarized.vim ~/.vim/colors/ 와 같은 작업을 해줍시다.   
+        ![fail](./fail_vimcolor.png)
           
 5. 망함
-      - 당황하지 않고 해결책을 찾아봅시다.  
-        '터미널의 scheme관련 문제가 있는 것 같네요. 
-        제가 쓰고 있는 터미널의 배경에 투명도가 적용되어 있기 때문이죠. (https://github.com/spf13/spf13-vim/issues/284)
-        vim의 scheme과 terminal의 scheme을 같이 제공해주는 오픈소스를 사용합시다.'
+      - 당황하지 않고 해결책을 찾아봅시다.    
+        터미널의 scheme관련 문제가 있는 것 같네요.   
+        제가 쓰고 있는 터미널의 배경에 투명도가 적용되어 있기 때문이죠. (https://github.com/spf13/spf13-vim/issues/284)  
+        `vim의 scheme과 terminal의 scheme`을 같이 제공해주는 오픈소스를 사용합시다.  
       
 6. 맙소사
       - ~/.vimrc 내에서 colorscheme 부분 밑에 hi Normal guibg=none ctermbg=none 을 적용하니 봐줄만 하군요
