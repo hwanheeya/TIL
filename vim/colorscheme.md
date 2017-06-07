@@ -33,6 +33,7 @@
           + cp ~/.vim/bundle/vim-colors-solarized/colors/solarized.vim ~/.vim/colors/ 와 같은 작업을 해줍시다. (예시)
           + 했는데 ... 화면이 아래와 같습니다.
           
+          ![fail](~/fail_vimcolor.png)
 
     
 ---
