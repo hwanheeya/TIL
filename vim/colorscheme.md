@@ -17,8 +17,7 @@
       - 하지만, vim을 종료하면 설정해두었던 colorscheme이 초기화됩니다.
       - 제가 원하는건 vim을 실행할 때 마다 제가 원하는 colorscheme을 적용하는 것입니다.
       - 아니 ... 그 이전에!
-      - 인터넷에서 본 colorscheme이랑 제가 적용한 colorscheme이 다릅니다.
-        
+      - 인터넷에서 본 colorscheme이랑 제가 적용한 colorscheme이 다릅니다.  
         분명 적용은 된 것 같은데 색상도 다르고 이것 저것 다 다르죠.
       - 관련해서는 나중에 !! TODO:
       
@@ -36,8 +35,7 @@
           ![fail](./fail_vimcolor.png)
           
 5. 망함
-      - 당황하지 않고 해결책을 찾아봅시다.
-      
+      - 당황하지 않고 해결책을 찾아봅시다.  
         '터미널의 scheme관련 문제가 있는 것 같네요. 
         제가 쓰고 있는 터미널의 배경에 투명도가 적용되어 있기 때문이죠. (https://github.com/spf13/spf13-vim/issues/284)
         vim의 scheme과 terminal의 scheme을 같이 제공해주는 오픈소스를 사용합시다.'
@@ -48,12 +46,8 @@
           
           
 ---
-[링크]
-
-http://blog.freezner.com/archives/1087
-
-https://stackoverflow.com/questions/9239107/where-is-vim-folder-in-mac-os-and-how-to-install-themes-in-gvim
-
-https://github.com/morhetz/gruvbox/wiki/Installation
-
-https://bluesh55.github.io/2016/10/09/vim-ide/
+[링크]  
+http://blog.freezner.com/archives/1087  
+https://stackoverflow.com/questions/9239107/where-is-vim-folder-in-mac-os-and-how-to-install-themes-in-gvim  
+https://github.com/morhetz/gruvbox/wiki/Installation  
+https://bluesh55.github.io/2016/10/09/vim-ide/  
