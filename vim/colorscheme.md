@@ -30,9 +30,8 @@
       - ~/.vimrc 에서 colorscheme을 적용하려고 하면 "cannot find color scheme ' ~~~ ' " 라고 뜹니다.
           
           + 왜 그럴까요???
-          + cp ~/.vim/bundle/vim-colors-solarized/colors/solarized.vim ~/.vim/colors/ 와 같은 작업을 해줍시다. (예시)
-          + 했는데 ... 화면이 아래와 같습니다.
-          
+          cp ~/.vim/bundle/vim-colors-solarized/colors/solarized.vim ~/.vim/colors/ 와 같은 작업을 해줍시다. (예시)
+          했는데 ... 화면이 아래와 같습니다.
           
           ![fail](./fail_vimcolor.png)
           
@@ -41,6 +40,7 @@
     
 ---
 [링크]
+
 http://blog.freezner.com/archives/1087
 
 https://stackoverflow.com/questions/9239107/where-is-vim-folder-in-mac-os-and-how-to-install-themes-in-gvim
