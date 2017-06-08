@@ -46,7 +46,7 @@ node_t * head는 첫번째 노드를 가리키고 있을 것이다.  
 void insert(node_t * head, int val) 함수에 head를 넘기게 되면  
 node_t * 타입의 변수가 head가 가리키는 것을 똑같이 가리키게 된다.
 
-[그림 1]<img src="https://github.com/hwanheeya/TIL/ds/linkedlist1.png" width="100">
+[그림 1](./linkedlist_1.png)
 
 
 
