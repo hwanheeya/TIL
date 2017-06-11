@@ -1,5 +1,5 @@
 # Let me introduce my self  
-- job : student (want to be ...)  
+- job : student (want to be ?)  
 - hobby : read book  
 - interest: software engineering and eat food.  
 - 이제 영어는 그만...  
