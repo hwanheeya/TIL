@@ -76,6 +76,9 @@ https://stackoverflow.com/questions/17599830/installing-mysql-python-on-mac
 
 https://github.com/PyMySQL/PyMySQL를 대신 쓰도록 하자. (PyMySQL Module)  
 
+...  
+MySQL-python을 인터프리터 설정에서 추가했더니, mysqldb 모듈이 추가되었다.  
+결론 : 인터프리터에서 MySQLdb 또는 MySQL-python을 설치하세요.  
 
 
 
