@@ -43,9 +43,40 @@ SDK 디렉토리를 설정해줬더니 저 모양이다. 뭔가가 잘못되었�
 성공적으로 마무리가 됬으면 SDK 디렉토리를 platform/google_appengine으로 설정하면 끝난다.  
 
 ## 3. Deploy Empty Project  
+
 우리는 물론 Django를 나중에야 쓰겠지만, 아직은 필요 없으므로 Django 없는 빈 AppEngine 프로젝트를 만든다.  
-Tools > Google App Engine 을 눌러 배포를 해보자.  
-성공적으로 배포가 되었는지 확인하기 위해 Hello World 같이 식상한 문구 대신 Helllo World 문구를 사용한다.  
-아무 문제 없이 배포가 된다.  
+
+Tools > Google App Engine 을 눌러 배포를 해보자.  
+성공적으로 배포가 되었는지 확인하기 위해 Hello World 같이 식상한 문구 대신 Helllo World 문구를 사용한다.  
+아무 문제 없이 배포가 된다.  
 이 과정에서 문제가 생겼다면, 심심한 위로의 말씀을 전합니다.  
+
+### 3-1. Git  
+집에서도 개발하고 싶고, 회사에서도 개발하고 싶다.  
+정답은 Version Control, 그 중에서 가장 힙한 git을 쓰도록 하자.  
+나 같이 커피 값엔 관대하면서 개발 관련 비용에는 인색한 사람은 bitbucket을 사용하도록 하자. (private repository 지원)  
+
+![git-guide](./guide-images/git-image1.png)  
+![git-guide](./guide-images/git-image2.png)  
+
+이렇게 작업이 술술 진행될 때는 의심을 해야한다.  
+더 생각할 거리는 없는지에 대해서!!  
+하지만, 겪어보지 않고서는 모르기 때문에 그냥 remote 주소 추가 작업을 진행한다.  
+집에서 push 해보고 회사가서 후회하도록 하자.  
+
+## 4. Get data from Cloud SQL  
+시도해보자.  
+mysql-connector를 설치해야 하는데, MySQLdb module이 해당 모듈이다.  
+pip install MySQLdb ...  
+Fail ...  
+뜻대로 되지 않아 해당 링크를 참고해봤다.  
+https://stackoverflow.com/questions/25865270/how-to-install-python-mysqldb-module-using-pip  
+https://stackoverflow.com/questions/17599830/installing-mysql-python-on-mac  
+... 해도 안된다.  
+
+https://github.com/PyMySQL/PyMySQL를 대신 쓰도록 하자. (PyMySQL Module)  
+
+
+
+
 
