@@ -79,13 +79,14 @@ https://github.com/PyMySQL/PyMySQL를 대신 쓰도록 하자. (PyMySQL Module)
 ...  
 MySQL-python을 인터프리터 설정에서 추가했더니, mysqldb 모듈이 추가되었다.  
 결론 : 인터프리터에서 MySQLdb 또는 MySQL-python을 설치하세요.  
-  
-그런데 안되는 이유는 따로 있었다.  
-내 목표는 Google App Engine과 Google Cloud SQL을 함께 사용하는 것이다.  
+  
+그런데 안되는 이유는 따로 있었다.  
+내 목표는 Google App Engine과 Google Cloud SQL을 함께 사용하는 것이다.  
 앱엔진 서버와 sql서버가 같은 지역에 위치해야 하는데, 그동안 내가 만든 앱엔진 서버는 asia에 있었다. (sql은 us)  
-
----  
+  
+---  
 때문에 이번에 새로 만들 앱엔진 프로젝트는 us-central에 위치하게끔 했다.  
+
 
 
 
