@@ -91,8 +91,21 @@ MySQL-python을 인터프리터 설정에서 추가했더니, mysqldb 모듈이 
 Cloud SQL에 앱엔진 인스턴스 추가에 성공하였다.  
 이제 본격적으로 sql에 접근해보자.  
   
----  
-.  
+---  
+우여곡절끝에 성공했다.  
+app.yaml에 env_variable: CLOUDSQL_CONNECTION_NAME 잘 작성해라... 메인보드에 나온 그대로 입력해.  
+``` python  
+    db = MySQLdb.connect(
+    unix_socket=cloudsql_unix_socket,
+    db='~~~',
+    user='root')
+```  
+
+와 같은 양식으로 디비를 불러오자.  
+MySQL Workbench에서 사용하던 방식으로, 유저와 비밀번호를 설정해서 연결을 시도했으나 잘 안되더라구.  
+이유는 잘 모르겠는데 저렇게 하면 된다.  
+후우..  
+Profile approval page 관련 정리는 새로 파일을 만들어서 진행하겠다.  
 
 
 
