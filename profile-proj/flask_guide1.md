@@ -40,12 +40,19 @@ c의 경우는 main 함수가 자동으로 실행된다.
 
 예를 들어, script.py 파일이 있다고 가장하자.  
 다른 파일에서 script.py를 임포트하여 사용하는 경우가 있을 수 있고  
-python script.py와 같이 모듈이 직접 수행되는 경우가 있다.  
+python script.py와 같이 모듈이 직접 수행되는 경우가 있다.  (메인 프로그램 = script module)  
 
 전자의 경우 __name__ -> script가 되고  
 후자의 경우 __name__ -> main이 된다.  
 
----  
+
+- (c) 
+``` python  
+@app.route('/')  
+def function():  
+```  
+해당 URL로 요청이 들어온 경우, 등록한 함수를 실행하게끔 한다.  
+(https://spoqa.github.io/2012/01/16/wsgi-and-flask.html)를 참고하면 아주 좋다.  
 
 
 
