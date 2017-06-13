@@ -61,24 +61,34 @@ Tools > Google App Engine 을 눌러 배포를 해보자.
 
 이렇게 작업이 술술 진행될 때는 의심을 해야한다.  
 더 생각할 거리는 없는지에 대해서!!  
-하지만, 겪어보지 않고서는 모르기 때문에 그냥 remote 주소 추가 작업을 진행한다.  
+하지만, 겪어보지 않고서는 모르기 때문에 그냥 remote 주소 추가 작업을 진행한다.  
 집에서 push 해보고 회사가서 후회하도록 하자.  
 
+
 ## 4. Get data from Cloud SQL  
-시도해보자.  
-mysql-connector를 설치해야 하는데, MySQLdb module이 해당 모듈이다.  
-pip install MySQLdb ...  
-Fail ...  
-뜻대로 되지 않아 해당 링크를 참고해봤다.  
-https://stackoverflow.com/questions/25865270/how-to-install-python-mysqldb-module-using-pip  
-https://stackoverflow.com/questions/17599830/installing-mysql-python-on-mac  
-... 해도 안된다.  
 
-https://github.com/PyMySQL/PyMySQL를 대신 쓰도록 하자. (PyMySQL Module)  
-
-...  
 MySQL-python을 인터프리터 설정에서 추가했더니, mysqldb 모듈이 추가되었다.  
 결론 : 인터프리터에서 MySQLdb 또는 MySQL-python을 설치하세요.  
+
+// updated
+추가 했는데, 여전히 안된다.  
+![error](./error_image1.png)  
+![error](./error_image2.png)  
+
+
+```shell
+pip uninstall MySQL-python
+(brew unlink mysql-connector-c)
+brew install mysql (핵심)
+pip install MySQL-python  
+```  
+결과는... 대성공 (pip install 말고 preference에서 MySQL-python을 추가하시오.)  
+
+
+
+
+
+
   
 그런데 안되는 이유는 따로 있었다.  
 내 목표는 Google App Engine과 Google Cloud SQL을 함께 사용하는 것이다.  
@@ -94,6 +104,13 @@ Cloud SQL에 앱엔진 인스턴스 추가에 성공하였다.
 ---  
 우여곡절끝에 성공했다.  
 app.yaml에 env_variable: CLOUDSQL_CONNECTION_NAME 잘 작성해라... 메인보드에 나온 그대로 입력해.  
+```
+env_variables:
+    CLOUDSQL_CONNECTION_NAME: your-connection-name
+    CLOUDSQL_USER: root
+    CLOUDSQL_PASSWORD: your-cloudsql-user-password
+```   
+
 ``` python  
     db = MySQLdb.connect(
     unix_socket=cloudsql_unix_socket,
