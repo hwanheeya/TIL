@@ -109,7 +109,13 @@ env_variables:
     CLOUDSQL_CONNECTION_NAME: your-connection-name
     CLOUDSQL_USER: root
     CLOUDSQL_PASSWORD: your-cloudsql-user-password
+
+libraries:
+- name: MySQLdb
+  version: "latest"
 ```   
+
+
 
 ``` python  
     db = MySQLdb.connect(
